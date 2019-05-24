@@ -1,0 +1,4 @@
+{
+  "mongoURI": "mongodb://theonlydeng:agent007@ds038547.mlab.com:38547/mern_shopping_list_db",
+  "jwtSecret": "sl_myJwtSecret"
+}
