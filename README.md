@@ -27,7 +27,3 @@ npm run client
 
 
 
-Brad Traversy
-Tutorial
-
-
