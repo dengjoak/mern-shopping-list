@@ -14,7 +14,7 @@ import PropTypes from "prop-types";
 import RegisterModal from "./auth/RegisterModal";
 import LoginModal from "./auth/LoginModal";
 import Logout from "./auth/Logout";
-
+import logo from "../img/ix3logo.svg";
 class AppNavbar extends Component {
   state = {
     isOpen: false
@@ -36,7 +36,7 @@ class AppNavbar extends Component {
     const authLinks = (
       <Fragment>
         <NavItem>
-          <span className="navbar-text mr-3">
+          <span className="navbar-text mr-4">
             <strong>{user ? `Welcome ${user.name}` : ""}</strong>
           </span>
         </NavItem>
@@ -59,9 +59,10 @@ class AppNavbar extends Component {
 
     return (
       <div>
-        <Navbar color="dark" dark expand="sm" className="mb-5">
+        <Navbar color="light" light expand="sm" className="mb-5">
           <Container>
-            <NavbarBrand href="/"> Ix3 Shopping List</NavbarBrand>
+            <img src={logo} />
+
             <NavbarToggler onClick={this.toggle} />
             <Collapse isOpen={this.state.isOpen} navbar>
               <Nav className="ml-auto" navbar>
