@@ -74,6 +74,7 @@ class ItemModal extends Component {
                   type="text"
                   name="name"
                   id="item"
+                  autoComplete="off"
                   placeholder="Add shopping item"
                   onChange={this.onChange}
                 />

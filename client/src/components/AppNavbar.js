@@ -61,7 +61,7 @@ class AppNavbar extends Component {
       <div>
         <Navbar color="light" light expand="sm" className="mb-5">
           <Container>
-            <img src={logo} />
+            <img src={logo} alt="" />
 
             <NavbarToggler onClick={this.toggle} />
             <Collapse isOpen={this.state.isOpen} navbar>
